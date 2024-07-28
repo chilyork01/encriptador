@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/Logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="container">
+        <main class="left-side">
+            <textarea id="input-texto" class="text-input" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="ajuste-container">
+                <p class="ajuste">Solo letras minúsculas y sin acentos</p>
+                <div class="buttons-footer">
+                    <button id="btn-encriptar">Encriptar</button>
+                    <button id="btn-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </main>
+        <aside class="right-side">
+            <div id="output-container" class="output-container hidden">
+                <textarea id="output-texto" class="text-input-salida" readonly></textarea>
+                <button id="btn-copiar">Copiar</button>
+            </div>
+            <div id="imagen-descripcion-container">
+                <img src="assets/Muñeco.png" alt="Imagen descriptiva" class="muñeco">
+                <h4>Ningún mensaje fue encontrado</h4>
+                <br>
+                <p>Ingresa el texto que desees encriptar o<br> desencriptar.</p>
+            </div>
+        </aside>
+    </div>
+    <footer class="page-footer">
+        <p>&copy; 2024 Leonardo Vergara Ibañez</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
